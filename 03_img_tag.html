@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Image Tag</title>
+
+    <style>
+        .pro{
+            width: 400px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+        }
+        .bg{
+            width: 200px;
+            height: 300px;
+            background-color: white;
+            float:left;
+            position: relative;
+        }
+        .pro_img{
+            width: 200px;
+            height: 200px;
+        }
+        .tag{
+            background-color: orange;
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: none;
+        }
+        .bg:hover .tag{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="pro">
+        <div class="bg">
+            <img src="img/node11.webp" alt="" class="pro_img">
+            </img>
+            <div class="tag">
+                <ul>
+                    <li>Redmi Note 11 5G</li>
+                    <li>5000mAh大电量</li>
+                    <li>1199元起</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg">
+            <img src="img/redmi_k50.webp" alt="" class="pro_img">
+            </img>
+            <div class="tag">
+                <ul>
+                    <li>Redmi Note 11 5G</li>
+                    <li>5000mAh大电量</li>
+                    <li>1199元起</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
