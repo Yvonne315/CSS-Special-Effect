@@ -1,0 +1,130 @@
+<!-- Emmet Document https://docs.emmet.io/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        use link/script to link out file
+        eg. link:css    link:favicon    script:src
+     -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+     <script src=""></script>
+     
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        1. Child: ">"
+        You can use ">" operator to nest elements inside each other:
+        eg. div>p
+    -->
+    <div>
+        <p>"div>p"</p>
+    </div>
+
+    <!-- 
+        2. Sibling: +
+        Use + operator to place elements near each other, on the same level:
+        eg. div + p
+     -->
+     <div></div>
+     <p></p>
+
+    <!-- 
+        3. Climb-up: ^
+        With > operator you’re descending down the generated tree 
+        and positions of all sibling elements will be resolved 
+        against the most deepest element:
+        eg. div>p>a^div
+    -->
+    <div>
+    <p><a href=""></a></p>
+    <div></div>
+    </div>
+
+    <!-- 
+        4. Multiplication: *
+        With * operator you can define how many times element should be outputted:
+        eg. ul>il*5
+    -->
+    <ul>
+    <il></il>
+    <il></il>
+    <il></il>
+    <il></il>
+    <il></il>
+    </ul>
+
+    <!-- 
+        5. Grouping: ()
+        Parenthesises are used by Emmets’ power users for grouping 
+        subtrees in complex abbreviations:
+        eg. div>(div>img+div)*3
+    -->
+    <div>
+        <div>
+            <img src="" alt="">
+            <div></div>
+        </div>
+        <div>
+            <img src="" alt="">
+            <div></div>
+        </div>
+        <div>
+            <img src="" alt="">
+            <div></div>
+        </div>
+    </div>
+
+    <!-- 
+        6. ID and CLASS
+        In CSS, you use elem#id and elem.class notation to reach 
+        the elements with specified id or class attributes. 
+        In Emmet, you can use the very same syntax to add these 
+        attributes to specified element:
+        eg. div#id01 img.class01
+    -->
+    <div id="id01"></div>
+    <img src="" alt="" class="class01">
+
+    <!-- 
+        7.Item numbering: $
+        With multiplication * operator you can repeat elements, 
+        but with $ you can number them. Place $ operator inside 
+        element’s name, attribute’s name or attribute’s value to 
+        output current number of repeated element:
+        eg. div#item$$*5
+    -->
+    <div id="item01"></div>
+    <div id="item02"></div>
+    <div id="item03"></div>
+    <div id="item04"></div>
+    <div id="item05"></div>
+
+    <!-- 
+        8. Text: {}
+        You can use curly braces to add text to element:
+        eg. a{Click Me}
+    -->
+    <a href="">Click Me</a>
+
+    <!-- 
+        9. Implicit tag names
+            li for ul and ol
+            tr for table, tbody, thead and tfoot
+            td for tr
+            option for select and optgroup
+        eg. ol>.li$*5
+    -->
+    <ol>
+        <li class="li1"></li>
+        <li class="li2"></li>
+        <li class="li3"></li>
+        <li class="li4"></li>
+        <li class="li5"></li>
+    </ol>
+</body>
+</html>
