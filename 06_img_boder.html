@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img_border{
+            width: 300px;
+            height: 410px;
+            margin: 50px auto;
+            border: 30px transparent solid;
+            border-image: url(img/border03.jpg) 200 200 round;
+        }
+
+        .img_border>img{
+            width: 250px;
+            height: 360px;
+            padding: 25px;
+        }
+       
+        .img_border01{
+            width: 400px;
+            height: 500px;
+            margin: auto;
+            background-image: url(img/border04.png);
+            background-size: cover;
+        }
+
+        .img_border01>img{
+            width: 250px;
+            height: 350px;
+            padding: 120px 20px 20px 80px;
+            /* To change the z-level index of the image, 
+            the position has to be relative */
+            position: relative;
+            z-index: -10;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img_border">
+        <img src="img/gril02.jpg" alt="">
+    </div>
+    <div class="img_border01">
+        <img src="img/gril03.jpg" alt="">
+    </div>
+</body>
+</html>

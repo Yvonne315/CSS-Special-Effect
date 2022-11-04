@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .site-category{
+            width:200px;
+            height: 300px;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            background-color: #3F3D3D;
+        }
+
+        .category-list{
+            list-style-type: none;
+            position: relative;
+            /* Vertical center */
+            align-items: center;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+        }
+        .site-link{
+            text-decoration: none;
+            color: aliceblue;
+            line-height: 40px;
+            position: relative;
+            left: 20px;
+        }
+        .category-item{
+            height: 40px;
+        }
+        .children{
+            display: none;
+            width: 1000px;
+            height: 300px;
+            position: absolute;
+            top: -50px;
+            left: 200px;
+            background-color: white;
+            border: 2px #3F3D3D solid;
+            box-sizing: border-box;
+        }
+        .children::after{
+            /* clear float left */
+            clear: both;
+        }
+
+        .children>ul{
+            width: 33%;
+            height: 300px;
+            float: left;
+            text-align: center;
+        }
+        .children>ul>li{
+            list-style-type: none;
+            line-height: 40px;
+        }
+
+        .category-item:hover .children{
+            display: flex;
+            z-index: 10;
+        }
+
+        .category-item:hover{
+            background-color: orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="site-category">
+        <ul class="category-list">
+            <li class="category-item">
+                <a href="" class="site-link">手机</a>
+                <div class="children">
+                    <ul>
+                        <li>1111</li>
+                        <li>2222</li>
+                        <li>3333</li>
+                    </ul>
+                    <ul>
+                        <li>4444</li>
+                        <li>5555</li>
+                        <li>6666</li>
+                    </ul>
+                    <ul>
+                        <li>7777</li>
+                        <li>8888</li>
+                        <li>9999</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="category-item">
+                <a href="" class="site-link">电视</a>
+                <div class="children">
+                    <ul>
+                        <li>1111</li>
+                        <li>2222</li>
+                        <li>3333</li>
+                    </ul>
+                    <ul>
+                        <li>4444</li>
+                        <li>5555</li>
+                        <li>6666</li>
+                    </ul>
+                    <ul>
+                        <li>7777</li>
+                        <li>8888</li>
+                        <li>9999</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="category-item">
+                <a href="" class="site-link">笔记本 &nbsp; 平板</a>
+                <div class="children">
+                    <ul>
+                        <li>1111</li>
+                        <li>2222</li>
+                        <li>3333</li>
+                    </ul>
+                    <ul>
+                        <li>4444</li>
+                        <li>5555</li>
+                        <li>6666</li>
+                    </ul>
+                    <ul>
+                        <li>777799999</li>
+                        <li>888888888</li>
+                        <li>999900000</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="category-item">
+                <a href="" class="site-link">出行 &nbsp; 穿戴</a>
+                <div class="children">
+                    <ul>
+                        <li>1111</li>
+                        <li>2222</li>
+                        <li>3333</li>
+                    </ul>
+                    <ul>
+                        <li>4444555555</li>
+                        <li>55556666666</li>
+                        <li>6666777777</li>
+                    </ul>
+                    <ul>
+                        <li>7777</li>
+                        <li>8888</li>
+                        <li>9999</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="category-item">
+                <a href="" class="site-link">家电</a>
+                <div class="children">
+                    <ul>
+                        <li>11112222</li>
+                        <li>222233333</li>
+                        <li>3333444444</li>
+                    </ul>
+                    <ul>
+                        <li>4444</li>
+                        <li>5555</li>
+                        <li>6666</li>
+                    </ul>
+                    <ul>
+                        <li>7777</li>
+                        <li>8888</li>
+                        <li>9999</li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
