@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .coupon{
+            width: 600px;
+            height: 150px;
+            background-color: lightgray;
+            margin: 20px auto;
+            position: relative;
+        }
+        .coupon>div{
+            float: left;
+        }
+        .coupon>.left{
+            width: 140px;
+            height: 130px;
+            background-color: #1BA0FF;
+            font: bold 16pt Helvetica, serif;
+            color: white;
+            border-radius: 20px 0 0 20px;
+            margin: 10px;
+            text-align: center;
+            line-height: 130px;
+            
+        }
+        .coupon>.left>span:first-child{
+            font-size: 40pt;
+            margin-left: 10px;
+        }
+        .coupon>.right{
+            width: 430px;
+            height: 130px;
+            background-color: white;
+            border-radius: 0 20px 20px 0;
+            margin: 10px 10px 10px 0;
+        }
+
+        .coupon>.right>div{
+            float: left;
+            margin:0px 0px 0px 0px;
+        }
+        .coupon>.right>div:first-child{
+            width: 330px;
+        }
+        .coupon>.right>div:first-child>p:first-child{
+            font: bold 20pt "Helvetica Neue";
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .coupon>.right>div:first-child>p:last-child{
+            font: 12pt "Helvetica Neue";
+            color: gray;
+            margin-left: 20px;
+        }
+        .coupon>.right>div:last-child>a{
+            display: block;
+            font: 12pt "Helvetica Neue";
+            color: gray;
+            margin-top: 30px;
+        }
+        .coupon>.left::before{
+            content: "";
+            display: block;
+            background-color: lightgray;
+            border-radius: 60%;
+            width: 40px;
+            height: 30px;
+            position: absolute;
+            left:135px;
+            top:0px;
+        }
+        .coupon>.left::after{
+            content: "";
+            display: block;
+            background-color: lightgray;
+            border-radius: 60%;
+            width: 40px;
+            height: 30px;
+            position: absolute;
+            left:135px;
+            top:120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="coupon">
+        <div class="left">
+            <span>20</span>
+            <span>元</span>
+        </div>
+        <div class="right">
+            <div>
+                <p>满100元可用</p>
+                <p>有效期：2022-11-10到2022-11-11</p>
+            </div>
+            <div>
+                <a href="">使用说明></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

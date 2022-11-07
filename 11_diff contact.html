@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .contact{
+            width: 900px;
+            height: 200px;
+            margin: 20px auto;
+            position: relative;
+        }
+        .contact>div{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(0, 122, 252);
+            border-radius: 50% 50%;
+            float: left;
+            border: 5px rgba(255, 255, 255, 0.6) solid;
+            position: absolute;
+        }
+        .contact>div:nth-child(2){
+            margin-left: 180px;
+        }
+        .contact>div:nth-child(3){
+            margin-left: 360px;
+        }
+        .contact>div:nth-child(4){
+            margin-left: 540px;
+        }
+        .contact>div:nth-child(5){
+            margin-left: 720px;
+        }
+        .contact>div>img{
+            width: 80px;
+            height: 80px;
+            display: block;
+            position: relative;
+            margin: 20px auto;
+        }
+        .contact>div>p{
+            font: 20pt bold sans-serif;
+            display: block;
+            text-align: center;
+            color: rgb(196, 194, 194);
+        }
+        .contact>div:hover{
+            background-color:rgb(255, 115, 0);
+            z-index: 10;
+        }
+        .contact>div:hover>p{
+            font: 22pt bold sans-serif;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <div>
+            <img src="img/icon/home.png">
+            <p>HOME</p>
+        </div>
+        <div>
+            <img src="img/icon/dianhua.png">
+            <p>PHONE</p>
+        </div>
+        <div>
+            <img src="img/icon/wifi.png">
+            <p>WIFI</p>
+        </div>
+        <div>
+            <img src="img/icon/twitter.png">
+            <p>TWITTER</p>
+        </div>
+        <div>
+            <img src="img/icon/Settings.png">
+            <p>SETTINGS</p>
+        </div>
+    </div>
+</body>
+</html>

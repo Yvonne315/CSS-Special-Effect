@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #333;
+        }
+        .div01, .div02{
+            width: 1200px;
+            height: 150px;
+            margin: 20px auto;
+        }
+        .div01>div{
+            width: 285px;
+            height: 150px;
+            background-color: white;
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .div01>div:last-child{
+            margin-right: 0px;
+        }
+        .div01>div>img{
+            width: 265px;
+            height: 130px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            border-radius: 20px;
+        }
+
+        .div01>div:hover img{
+            width: 281px;
+            height: 146px;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            border-radius: 10px;
+        }
+
+        .div02>div{
+            width: 200px;
+            height: 200px;
+            background-color: transparent;
+            border: 20px rgba(255, 255, 255, 0.7) solid ;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50% 50%;
+            position: relative;
+            box-sizing: border-box;
+        }
+        .div02>div:last-child{
+            margin-right: 0px;
+        }
+        .div02>div>img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50% 50%;
+            z-index: -1;
+            position: absolute;
+            top: -20px;
+            left: -20px;
+        }
+
+        .div02>div:hover{
+            border: 2px rgba(255, 255, 255, 1) solid ;
+        }
+
+        .div02>div:hover img{
+            position: absolute;
+            top: -2px;
+            left: -2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div01">
+        <div><img src="img/building01.webp" alt=""></div>
+        <div><img src="img/building02.jpg" alt=""></div>
+        <div><img src="img/building03.jpg" alt=""></div>
+        <div><img src="img/building04.jpg" alt=""></div>
+    </div>
+    <div class="div02">
+        <div><img src="img/image1.jpg" alt=""></div>
+        <div><img src="img/image2.jpg" alt=""></div>
+        <div><img src="img/image3.jpg" alt=""></div>
+        <div><img src="img/image4.jpg" alt=""></div>
+    </div>
+</body>
+</html>

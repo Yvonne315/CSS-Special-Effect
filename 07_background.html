@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+            float: left;
+        }
+
+        .div01{
+            background-image: linear-gradient(to top left, #E96643,#FABEBC);
+        }
+
+        .div02{
+            background-image:repeating-linear-gradient(
+                45deg,  
+                cornflowerblue, 
+                rgb(185, 206, 244) 30%);
+        }
+
+        .div03{
+            background-image: radial-gradient(
+                farthest-side ellipse at 30% 30%, 
+                #eec8c8,#9E1311);
+        }
+
+        .div04{
+            background-image: radial-gradient(
+                circle at 70% 30%, 
+                lightgray,rgb(50, 50, 50));
+            border-radius: 50% 50%;
+            box-shadow: -41px 40px 30px -25px rgb(36, 36, 36);
+        }
+
+        .div05{
+            box-shadow: inset 0px 0px 18px rgb(3, 168, 251);
+            text-align: center;
+            line-height: 150px;
+            font-size: 50px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 5px 5px 2px rgb(251, 222, 3);
+        }
+    </style>
+</head>
+<body>
+    <div class="div01"></div>
+    <div class="div02"></div>
+    <div class="div03"></div>
+    <div class="div04"></div>
+    <div class="div05">
+        TEST
+    </div>
+</body>
+</html>
